@@ -1,0 +1,39 @@
+#header {
+    background-color: rgba(180, 43, 9, 0.788);
+    height: 15vh;
+}
+
+#menu {
+    background-color:yellow;
+    height: 20vh;
+  
+}
+
+#content {
+    background-color: green;
+    height: 30vh;
+}
+
+#ad {
+    background-color: yellow;
+    height: 20vh;
+}
+
+#footer {
+    background-color: rgba(180, 43, 9, 0.788);
+    height: 15vh;
+}
+
+@media screen and (min-width:768px) {
+
+    #menu {
+        height:30vh;
+    }
+}
+
+@media screen and (min-width:950px) {
+
+    #ad {
+        height:30vh;
+    }
+}

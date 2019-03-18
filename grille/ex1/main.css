@@ -1,0 +1,71 @@
+#container0 {
+    display:grid;
+    grid-template-rows: 15vh 20vh 30vh 20vh 15vh;
+    grid-template-areas: "header" "menu" "content" "ad" "footer";
+}
+
+
+header {
+    background-color: aqua;
+    grid-area: header;
+}
+
+#menu {
+    background-color:magenta;
+}
+
+#content {
+    background-color: pink;
+}
+
+#ad {
+    background-color: magenta;
+}
+
+footer {
+    background-color: aqua;
+    grid-area: footer;
+}
+
+@media screen and (min-width:768px) {
+    #container0 {
+        grid-template-columns: 25vw 75vw;
+        grid-template-areas: "header header" "menu content" "ad ad" "footer footer";
+        grid-template-rows: 15vh 50vh 20vh 15vh;
+    }
+
+    #menu {
+        grid-area: menu;
+    }
+
+    #content {
+        grid-area: content ;
+    }
+
+    #ad{
+        grid-area: ad;
+    }
+ 
+}
+
+@media screen and (min-width:1050px) {
+    #container0 {
+        grid-template-columns: 25vw 50vw 25vw;
+        grid-template-areas: "header header header" "menu content ad" "footer footer footer";
+        grid-template-rows: 15vh 60vh 20vh;
+    }
+
+    #menu {
+        grid-area: menu;
+    }
+
+    #content {
+        grid-area: content ;
+    }
+
+    #ad{
+        grid-area: ad;
+    }
+  
+}
+
